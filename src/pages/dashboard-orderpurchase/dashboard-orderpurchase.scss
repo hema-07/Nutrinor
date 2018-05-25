@@ -1,0 +1,33 @@
+page-orderpurchase{
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+  
+    .card-title {
+      // position: absolute;
+      // top: 36%;
+      font-size: 1.3em;
+      width: 100%;
+      font-weight: bolder;
+      // padding: 4px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+  }
+}
+
+#person {
+  height: 50px;
+  width: 50px;
+}
+#name {
+  font-size: 18px;
+}
+#logout {
+  margin-right: 0px;
+  margin-top: 10px;
+}  

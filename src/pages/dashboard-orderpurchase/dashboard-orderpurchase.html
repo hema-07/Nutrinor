@@ -1,0 +1,72 @@
+<html>
+    
+<body>
+  <br><br><br>
+      <div  class="bar bar-header" fixed>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <img id="person" style="border-radius:50%" src="../assets/imgs/bruce.jpg" alt="img" height=""/>
+              </ion-col>
+  
+              <ion-col>
+                <p id="name">Bruce</p>
+              </ion-col>
+              <ion-col>
+                <img src="../assets/imgs/nutri.jpg" style="border-radius:5">
+              </ion-col>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+                <img src="../assets/imgs/logout.png" id="logout" (click)="logout()">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </div>
+  <div>
+    <h2 style="text-align: center;">Orders Dashboard</h2>
+  </div>
+  <br><br><br>
+  <div class="card-background-page">
+      <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <ion-card id="dashcard" style="border-radius:15%">
+            <img id="dashcard" src="../assets/imgs/open.jpg" height="120px;" (click)="buy1()"/>
+            
+          </ion-card>
+          <div id="card-title" class="card-title" (click)="buy1()">
+              Open Orders
+                 </div>
+        </ion-col>
+
+        <ion-col col-6>
+                <ion-card id="dashcard" style="border-radius:15%">
+                  <img id="dashcard" src="../assets/imgs/closed.jpg" height="120px;"/>
+                 
+                </ion-card>
+                <div id="card-title" class="card-title">
+                    Closed Orders
+                        </div>
+          </ion-col>
+         </ion-row>
+         <br>
+         <br><br><br>
+        <ion-row>
+            <ion-col col-6>
+                <ion-card id="dashcard" style="border-radius:15%">
+                    <img id="dashcard" src="../assets/imgs/confirmed.jpeg" height="120px;" (click)="buy3()"/>
+                  
+                  </ion-card>
+                  <div id="card-title" class="card-title" (click)="buy3()">
+                      Confirmed Orders
+                          </div>
+              </ion-col>
+              <ion-col col-6>
+               
+                </ion-col>
+          </ion-row>
+    </ion-grid>
+    </div>
+  </body>
+      </html>

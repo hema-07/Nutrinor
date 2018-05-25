@@ -1,0 +1,43 @@
+page-purchase{
+  #ordercard{
+    background-repeat: no-repeat;
+    margin-top: 10px;
+  }
+#ordercard h2{
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+#ordercard h3{
+  padding: 5px;
+  font-size: 14px;
+  color: black;
+}
+#col1{
+  font-size:16px;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+td{
+  background-color:green;
+}
+th{
+  font-weight: bold;
+  font-size:16px;
+  text-align: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+}

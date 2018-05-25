@@ -1,0 +1,168 @@
+<html>
+    
+    <body>
+<br><br><br>      
+          <div  class="bar bar-header" fixed>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                      <img id="person" style="border-radius:50%" src="../assets/imgs/bruce.jpg" alt="img" height=""/>
+                  </ion-col>
+      
+                  <ion-col>
+                    <p id="name">Bruce</p>
+                  </ion-col>
+                  <ion-col>
+                    <img src="../assets/imgs/nutri.jpg" style="border-radius:5">
+                  </ion-col>
+                  <ion-col>
+                  </ion-col>
+                  <ion-col>
+                    <img src="../assets/imgs/logout.png" id="logout">
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+          </div>
+          <div>
+              <h2 style="text-align: center;">Open Orders</h2>
+            </div>
+      <div padding>
+          <ion-segment [(ngModel)]="pet">
+            <ion-segment-button style="font-size: 16px;font-weight: bold;" value="By Product">
+              By Product
+            </ion-segment-button>
+            <ion-segment-button style="font-size: 16px;font-weight: bold;" value="By Farmers">
+              By Farmers
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+      <div [ngSwitch]="pet">
+        <div *ngSwitchCase="'By Product'">
+          <table class="table table-striped">
+              <ion-card style="opacity: 0.7;">
+                <thead>
+                  
+                  <tr>
+                    <th>Item No</th>
+                    <th>Item Name</th>
+                    <th>Rate / Tonne in CAD</th>
+                    <th>Action</th>
+                  </tr>
+             
+                </thead>   
+              <tbody>
+                  <br><br>
+                  <tr style="background-color:green;">
+                   <td >UR101</td>
+                   <td>UREA </td>
+                   <td>1000</td>
+                    <td> <button ion-button data-toggle="modal" (click)="editItem($event,order)" >Confirm</button> </td>
+                 </tr>
+                 <br><br>
+                 <tr style="background-color:#FFBF00 ">
+                  <td >PN101</td>
+                  <td>Potassium Nitrate </td>
+                  <td>1000</td>
+                   <td> <button ion-button type="button" data-toggle="modal"  >Confirm</button> </td>
+                </tr>
+              <br><br>
+              <tr style="background-color: red;">
+                 <td >CA101</td>
+                 <td>Calcium Nitrate</td>
+                 <td>2000</td>
+                  <td> <button ion-button  type="button" data-toggle="modal" >Confirm</button> </td>
+               </tr>
+              <br><br>
+               </tbody>
+              </ion-card>
+             </table>
+        </div>
+      </div>
+      </body>
+          </html>
+
+<!-- <html>
+
+  <body id="dashbg" style="overflow:scroll;">
+    <div  id="nav" class="bar bar-header" fixed>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+                <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+            </ion-col>
+                
+            <ion-col>
+              <p id="name">Christy</p>
+            </ion-col>
+            <ion-col>
+              <img src="../assets/imgs/lacoopLogo.jpg" style="border-radius:5">
+            </ion-col>
+            <ion-col>
+            </ion-col>
+            <ion-col>
+              <img src="../assets/imgs/logout.png" id="logout">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+<ion-card id="order1">
+  <ion-grid>
+    <ion-row><h3 style="font-size: 14px;font-weight: bold;">Order Details</h3></ion-row>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      
+      <ion-col>
+        
+          <ion-label>For</ion-label>
+        </ion-col>
+        
+      <ion-col>
+          <ion-input type="text" placeholder="Nutrinor"></ion-input>
+       
+        </ion-col>
+        
+      <ion-col>
+        
+        </ion-col>
+       
+        
+        </ion-row> 
+    
+      <ion-row>
+    <table>
+        <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Rate in CAD</th>
+          <th>Qty</th>
+          <th>Remarks</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>UREA</td>
+          <td>1000 per tonne</td>
+          <td><ion-input type="text" style="text-align: center;"></ion-input></td>
+          <td><ion-input type="text"></ion-input></td>
+        </tr>
+        </tbody>
+      </table>
+    </ion-row>
+    </ion-grid>
+  </ion-card>
+<ion-grid>
+<ion-row>
+<ion-col></ion-col>
+<ion-col><button  ion-button>
+  <p>Continue</p>
+</button></ion-col>
+<ion-col><button (click)="buy()"  ion-button color="secondary">
+  <p>Submit</p>
+</button></ion-col>
+<ion-col></ion-col>
+</ion-row>
+</ion-grid>
+</body>
+</html> -->
